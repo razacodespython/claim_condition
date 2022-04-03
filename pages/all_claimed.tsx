@@ -1,8 +1,6 @@
 import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react';
 import type { NextPage } from 'next';
 import styles from '../styles/mystyles.module.css'
-import Image from 'next/image';
-import pok from '../public/pok.jpg'
 import { useNFTDrop } from '@thirdweb-dev/react';
 import { useState, useEffect } from 'react';
 import { NFTMetadata } from '@thirdweb-dev/sdk';
@@ -35,10 +33,8 @@ const Claimed: NextPage = () => {
             <div className={styles.nfts}>
                 {token.map((nft) => (
                     <div className={styles.nfts_image}>
-                        
                         <img src={nft.image} style={{ maxHeight: 80 }} />
                         <p key={nft.id}>{nft.name}</p>
-                        {/* <button onClick={mintNft}>click here</button> */}
                     </div>
                 ))}
 

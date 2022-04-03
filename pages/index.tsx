@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     if (nftDrop) {
-      nftDropClaim.getAllClaimed()
+      nftDropClaim?.getAllClaimed()
         .then((claimed) => {
           setClaimed(claimed);
         }

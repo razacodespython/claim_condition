@@ -1,3 +1,18 @@
+## Intro
+Build an app with NEXTJS:
+1. App is token gated. Meaning only if you hold an access NFT are you able to access the website
+2. Once you access the app you can claim an NFT. 
+3. Once all **access** NFTs are claimed the price of the NFT in the app goes up.
+
+Contracts used:
+1. NFT DROP used for access NFTS
+2. NFT DROP used for NFT in the app (behind the gate)
+
+Claim condition Logic:
+1. Claim condition is adjusted when an API call is made.
+2. API call checks if access NFTS equals certain amound. If yes, it makes the call to adjust the claim condition.
+3. Check for access NFT is made at frontend, claim condition ajdusted is at backend.
+
 ## Getting Started
 
 First, intall the required dependencies:
